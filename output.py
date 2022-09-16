@@ -1,3 +1,6 @@
+from microbit import display
+
+
 class OutputHandler:
     def roll(self, result: int) -> None:
         pass
