@@ -38,9 +38,9 @@ class BCDOutputHandler(OutputHandler):
             display.set_pixel(column, 4 - i, disp)
 
     def roll(self, result: int) -> None:
-        self.show_column_value(0, result / 10)
-        self.show_column_value(1, result % 10)
+        self.show_column_value(3, result / 10)
+        self.show_column_value(4, result % 10)
 
     def die(self, faces: int) -> None:
-        self.show_column_value(3, faces / 10)
-        self.show_column_value(4, faces % 10)
+        self.show_column_value(0, faces / 10)
+        self.show_column_value(1, faces % 10)
